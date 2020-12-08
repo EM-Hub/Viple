@@ -12,7 +12,7 @@
 </script>
 </head>
 <body>
-시작 페이지... index.jspasd
+시작 페이지
 </body>
 </html>
 
