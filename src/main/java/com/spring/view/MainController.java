@@ -6,13 +6,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.spring.biz.SampleService;
 
 @Controller
-public class SampleController {
+public class MainController {
 	@Resource(name = "sampleService")
 	SampleService sampleService;
 	
-	@RequestMapping(value = "/sample.do")
-	public String sample() {
-		return "sample/sample"; 
+	@RequestMapping(value = "/mainPage.do")
+	public String mainPage() {
+		return "main/mainPage"; 
 	}
 	
 }

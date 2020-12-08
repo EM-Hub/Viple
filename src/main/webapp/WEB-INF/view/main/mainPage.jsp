@@ -5,28 +5,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<script type="text/javascript">
-	location.href = 'mainPage.do';
-</script>
-<script type="text/javascript">
-</script>
 </head>
 <body>
-시작 페이지
+<h1>메인페이지입니다.</h1>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
