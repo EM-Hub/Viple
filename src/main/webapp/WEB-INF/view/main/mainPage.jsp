@@ -4,9 +4,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Viple</title>
+<style type="text/css">
+html, body{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+</style>
 </head>
 <body>
-<h1>메인페이지입니다.</h1>
+<div class="mainContainer">
+
+
+
+</div>
 </body>
 </html>

@@ -18,7 +18,7 @@
 	<bean id="dataSourceSpied" class="org.apache.commons.dbcp.BasicDataSource">
 		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"></property>
 		<property name="url" value="jdbc:oracle:thin:@localhost:1521:orcl"></property>
-		<property name="username" value="MYDB"></property>
+		<property name="username" value="VIPLE"></property>
 		<property name="password" value="oracle"></property>
 	</bean>
 	
