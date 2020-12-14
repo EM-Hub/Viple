@@ -2,11 +2,13 @@
 <!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
 
 <tiles-definitions>
-	<definition name="baseLayout" template="/WEB-INF/view/common/template.jsp">
-		<put-attribute name="title" value="SampleProject"/>
-		<put-attribute name="menu" value="/WEB-INF/view/common/menu.jsp"/>
-		<put-attribute name="side" value=""/>
-		<put-attribute name="body" value=""/>
+	<definition name="main/mainPage" template="/WEB-INF/view/main/mainPage.jsp">
+		<put-attribute name="title" value="Viple"/>
+		<put-attribute name="header" value="/WEB-INF/view/main/header.jsp"/>
+		<put-attribute name="menu" value="/WEB-INF/view/main/menu.jsp"/>
+		<put-attribute name="bodyleft" value="/WEB-INF/view/main/bodyleft.jsp"/>
+		<put-attribute name="bodyright" value="/WEB-INF/view/main/bodyright.jsp"/>
+		<put-attribute name="footer" value="/WEB-INF/view/main/footer.jsp"/>
 	</definition>
 	
 	<definition name="sample/*" extends="baseLayout">
