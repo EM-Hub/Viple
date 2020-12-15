@@ -42,7 +42,7 @@
 .searchInput{
 	width: 100%;
 	height: 60%;
-	border: 2px solid #00ADB2;
+	border: 2px solid #A091B7;
 }
 .menu{
 	width: 100%;
@@ -60,21 +60,24 @@
 	float: left;
 	margin-right: 100px;
 }
-.bannerBox{
+.bannerDiv2{
 	width: 80%;
 	height: 120px;
-	margin-top: 30px;
-}
-.bannerDiv2{
-	width: 60%;
-	height: 120px;
 	background: gray;
-	display: inline-block;
 }
 .loginDiv{
-	width: 30%;
+	width: 80%;
 	height: 120px;
-	background: yellow;
-	display: inline-block;
-	float: right;
+	border: 1px solid #dae1e6;
+	background: #f3f3f3;
+}
+#mainLoginBtn{
+	width: 80%;
+	height: 50px;
+	margin-top: 20px;
+	border: none;
+	background: #A091B7;
+	color: white;
+	font-weight: bold;
+	font-size: 36px;
 }

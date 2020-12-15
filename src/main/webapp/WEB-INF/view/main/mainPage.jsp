@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title><tiles:insertAttribute name="title"/></title>
-<link rel="stylesheet" type="text/css" href="resources/css/mainPage.css?ver=32"/>
+<link rel="stylesheet" type="text/css" href="resources/css/mainPage.css?ver=8"/>
 <style type="text/css">
 html, body{
 	width: 100%;
@@ -24,15 +24,23 @@ html, body{
 	<div align="center">
 		<tiles:insertAttribute name="menu"/>
 	</div>
-	<div style="width: 100%;" align="center">
-	<div class="bannerBox">
-		<div class="bannerDiv2">
-			<span style="color: white;">광고</span>
+	<div style="width: 100%; height: 100%; margin-top: 30px;">
+		<div style="width: 65%; height: 100%; display: inline-block;" align="center">
+			<div style="width: 15%; height: 100%; display: inline-block;">
+			</div>
+			<div style="width: 85%; height: 100%; display: inline-block; float: right;">
+				<tiles:insertAttribute name="bodyleft"/>
+			</div>
 		</div>
-		<div class="loginDiv">
-			<span>로그인, 본인정보</span>
+		<div style="width: 35%; height: 100%; display: inline-block; float: right;" align="center">
+			<div style="width: 85%; height: 100%; display: inline-block;">
+				<tiles:insertAttribute name="bodyright"/>
+			</div>
+			<div style="width: 15%; height: 100%; display: inline-block; float: right;">
+			</div>
 		</div>
-	</div>
+		<div>
+		</div>
 	</div>
 </div>
 </body>

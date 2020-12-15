@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<div class="mainContainer">
+	<div class="bannerDiv2">
+		<img src="resources/images/banner/banner2.png" width="100%" height="100%">
+	</div>
+</div>
 </body>
 </html>
