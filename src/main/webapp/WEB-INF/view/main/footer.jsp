@@ -7,6 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-
+<div style="background: #DED9E3; width: 100%; height: 100%;">
+<i class="icon-plus"></i>
+</div>
 </body>
 </html>
