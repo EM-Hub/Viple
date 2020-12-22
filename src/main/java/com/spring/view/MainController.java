@@ -15,6 +15,10 @@ public class MainController {
 		return "main/mainPage"; 
 	}
 	
+	@RequestMapping(value = "/loginPage.do")
+	public String loginPage() {
+		return "main/loginPage"; 
+	}
 }
 
 

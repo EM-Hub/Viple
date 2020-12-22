@@ -22,5 +22,6 @@
 		</div>
 	</div>
 </div>
+<script src="resources/js/login.js"></script> 
 </body>
 </html>

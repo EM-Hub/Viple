@@ -9,6 +9,8 @@
 <link rel="stylesheet" type="text/css" href="resources/css/mainPage.css?ver=8"/>
 <!-- 아이콘 -->
 <link rel="stylesheet" href="resources/icon/fontello-embedded.css">
+<!-- Jquey 기능을 가능하게 하는 SCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <style type="text/css">
 html, body{
 	width: 100%;
