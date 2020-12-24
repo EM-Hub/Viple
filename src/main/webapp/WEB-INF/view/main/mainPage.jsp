@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title><tiles:insertAttribute name="title"/></title>
-<link rel="stylesheet" type="text/css" href="resources/css/mainPage.css?ver=8"/>
+<link rel="stylesheet" type="text/css" href="resources/css/mainPage.css?ver=9"/>
 <!-- 아이콘 -->
 <link rel="stylesheet" href="resources/icon/fontello-embedded.css">
 <!-- Jquey 기능을 가능하게 하는 SCRIPT -->

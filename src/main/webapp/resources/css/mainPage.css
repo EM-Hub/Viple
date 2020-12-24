@@ -80,4 +80,14 @@
 	color: white;
 	font-weight: bold;
 	font-size: 36px;
+	outline: none;
+}
+#mainLoginBtn:hover{
+	cursor: pointer;
+}
+.rankDiv{
+	width: 80%;
+	height: 200px;
+	margin-top: 20px;
+	border: 1px solid #dae1e6;
 }
