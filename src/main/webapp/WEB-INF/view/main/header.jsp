@@ -5,13 +5,27 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<style type="text/css">
+.icon-star{
+	color: red;
+}
+#favorite{
+	cursor: pointer;
+	font-size: 11px;
+	transition: .6s;
+}
+#favorite:hover{
+	cursor: pointer;
+	font-weight: bold;
+}
+</style>
 </head>
 <body>
 <div class="header" align="center">
 	<div class="headerTop" align="right">
-		<span>VIPLE을 시작페이지로</span>
-		<span>｜</span>
 		<span>Home</span>
+		<span>｜</span>
+		<span id="favorite"><i class="icon-star"></i>즐겨찾기추가</span>
 	</div>
 	<div class="headerBottom" align="left">
 		<div class="logoDiv">
@@ -25,5 +39,6 @@
 		</div>
 	</div>	
 </div>
+<script src="resources/js/header.js"></script> 
 </body>
 </html>
