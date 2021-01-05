@@ -19,6 +19,11 @@ public class MainController {
 	public String loginPage() {
 		return "main/loginPage"; 
 	}
+	
+	@RequestMapping(value = "/writeForm.do")
+	public String writeForm() {
+		return "postingBoard/writeForm"; 
+	}
 }
 
 
