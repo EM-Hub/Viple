@@ -5,6 +5,7 @@
 <configuration>
 	<mappers>
 		<mapper resource="/mappings/sample-mapper.xml"/>
+		<mapper resource="/mappings/board-mapper.xml"/>
 	</mappers>
 </configuration>
 

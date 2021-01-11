@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!-- 맵퍼파일 생성 후 반드시 sql-map-config.xml 파일에 mapper 등록해줘야 함 -->
+<mapper namespace="boardMapper">
+	<resultMap type="com.spring.biz.vo.PostingBoardVO" id="pb">
+		<result column="PB_NUM" 	property="pbNum"/>
+		<result column="PB_TITLE" 	property="pbTitle"/>
+		<result column="PB_CONTENT" 	property="pbContent"/>
+		<result column="PB_WRITER" 	property="pbWriter"/>
+		<result column="PB_TIME" 	property="pbTime"/>
+		<result column="PB_CATEGORY" 	property="pbCategory"/>
+		<result column="PB_CATEGORY2" 	property="pbCategory2"/>
+		<result column="PB_CNT" 	property="pbCnt"/>
+	</resultMap>
+
+	<insert id="writeBoard">
+		INSERT INTO POSTING_BOARD(
+			PB_NUM
+			, PB_TITLE
+			, PB_CONTENT
+			, PB_WRITER
+			, PB_TIME
+			, PB_CATEGORY
+			, PB_CATEGORY2
+			, PB_CNT
+		) VALUES (
+			(SELECT NVL(MAX(PB_NUM) + 1, 1) FROM POSTING_BOARD)
+			, #{pbTitle}
+			, #{pbContent}
+			, 'java'
+			, SYSDATE
+			, 1
+			, 2
+			, 0
+		)
+	</insert>
+</mapper>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
