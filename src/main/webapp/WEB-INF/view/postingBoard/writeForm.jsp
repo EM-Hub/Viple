@@ -6,6 +6,16 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<!-- Jquey 기능을 가능하게 하는 SCRIPT -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath }/ckeditor/ckeditor.js"></script>
+<script type="text/javascript">
+$(function(){
+	CKEDITOR.replace('editor4',{
+		filebrowerUploadUrl: '${pageContext.request.contextPath}/adm/fileupload.do'
+	});
+});
+</script>
 <style type="text/css">
 html, body{
 	width: 100%;
@@ -64,7 +74,7 @@ html, body{
 }
 #write{
 	width: 60%;
-	height: 1500px;
+	height: 1000px;
 	overflow: auto;
 	border-left: 1px solid #A091B7;
 	border-right: 1px solid #A091B7;
@@ -92,11 +102,6 @@ html, body{
 }
 hr{
 	width: 80%;
-}
-textarea {
-	resize: none;
-	border: 1px solid #f3f3f3;
-	outline: none;
 }
 </style>
 </head>
@@ -135,7 +140,7 @@ textarea {
 	<div id="write" align="center">
 		<input type="text" placeholder="제목" id="title" name="pbTitle">
 			<hr><br>
-		<textarea rows="80%" cols="80%" name="pbContent"></textarea>
+		<textarea name="pbContent" id="editor4"></textarea>
 	</div>
 </div>
 </form>
