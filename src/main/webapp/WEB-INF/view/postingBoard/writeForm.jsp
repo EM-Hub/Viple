@@ -116,6 +116,9 @@ hr{
 		<div class="categoryDiv">
 			<select>
 				<option>전 체</option>
+				<%-- <c:forEach>
+					카테고리 데이터 넣을것.				
+				</c:forEach> --%>
 			</select>
 		</div>
 		<div class="categoryDiv">
