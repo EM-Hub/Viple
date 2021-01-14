@@ -136,7 +136,7 @@ hr{
 			<hr><br>
 		<textarea name="pbContent" id="editor"></textarea>
 			<script>
-				CKEDITOR.replace( 'editor' );
+				CKEDITOR.replace('editor');
 			</script>
 	</div>
 </div>
