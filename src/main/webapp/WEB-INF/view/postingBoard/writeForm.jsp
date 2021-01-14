@@ -8,6 +8,8 @@
 <title>Insert title here</title>
 <!-- Jquey 기능을 가능하게 하는 SCRIPT -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- CKeditor -->
+<script src="//cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
 <style type="text/css">
 html, body{
 	width: 100%;
@@ -53,7 +55,7 @@ html, body{
 	height: 90%;
 	text-align-last: center;
 }
-#editor{
+#writeMenu2{
 	width: 100%;
 	height: 50px;
 	border-bottom: 1px solid #D8E7FA;
@@ -125,14 +127,17 @@ hr{
 			<input type="submit" value="작성">
 		</div>
 	</div>
-	<div id="editor">
+	<div id="writeMenu2">
 	
 	</div>
 <div align="center" id="contentDiv">
 	<div id="write" align="center">
 		<input type="text" placeholder="제목" id="title" name="pbTitle">
 			<hr><br>
-		<textarea name="pbContent"></textarea>
+		<textarea name="pbContent" id="editor"></textarea>
+			<script>
+				CKEDITOR.replace( 'editor' );
+			</script>
 	</div>
 </div>
 </form>
