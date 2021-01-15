@@ -10,6 +10,7 @@
 <div style="background: #DED9E3; width: 100%; height: 100%;">
 <i class="icon-plus"></i>
 <a href="writeForm.do">임시(writeForm)</a>
+<a>글목록</a>
 </div>
 </body>
 </html>
