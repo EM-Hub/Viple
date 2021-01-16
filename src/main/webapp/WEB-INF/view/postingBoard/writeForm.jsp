@@ -21,7 +21,7 @@ html, body{
 #top{
 	width: 100%;
 	height: 70px;
-	border-bottom: 1px solid #D8E7FA;
+	border-bottom: 1px solid #dae1e6;
 }
 #top1{
 	width: 200px;
@@ -40,13 +40,19 @@ html, body{
 #writeMenu{
 	width: 100%;
 	height: 50px;
-	border-bottom: 1px solid #D8E7FA;
+	border-bottom: 1px solid #dae1e6;
 	padding-left: 50px;
 }
 .categoryDiv{
 	width: 150px;
 	height: 100%;
 	display: inline-block;
+	line-height: 50px;
+}
+.btnDiv{
+	display: inline-block;
+	position: absolute;
+	right: 30px;
 	line-height: 50px;
 }
 .categoryDiv > select{
@@ -58,32 +64,31 @@ html, body{
 #writeMenu2{
 	width: 100%;
 	height: 50px;
-	border-bottom: 1px solid #D8E7FA;
+	border-bottom: 1px solid #dae1e6;
 }
 #contentDiv{
 	width: 100%;
 	height: 1000px;
-	overflow: scroll;
 	background: #f3f3f3;
 }
 #write{
 	width: 60%;
-	height: 1000px;
+	height: 800px;
 	overflow: auto;
 	border-left: 1px solid #A091B7;
 	border-right: 1px solid #A091B7;
 	padding-top: 30px;
 	background: white;
 }
-#contentDiv::-webkit-scrollbar{
+#write::-webkit-scrollbar{
 	width: 15px;
 }
-#contentDiv::-webkit-scrollbar-thumb {
+#write::-webkit-scrollbar-thumb {
     background-color: #A091B7;
-    background-clip: padding-box;
     border: 2px solid transparent;
+	background-clip: padding-box;
 }
-#contentDiv::-webkit-scrollbar-track {
+#write::-webkit-scrollbar-track {
     background-color: #DED9E3;
     box-shadow: inset 0px 0px 5px white;
 }
@@ -126,8 +131,8 @@ hr{
 				<option>전 체</option>
 			</select>
 		</div>
-		<div class="categoryDiv">
-			<input type="submit" value="작성">
+		<div class="btnDiv">
+			<input type="submit" value="작성" id="writeBtn">
 		</div>
 	</div>
 	<div id="writeMenu2">
@@ -139,7 +144,11 @@ hr{
 			<hr><br>
 		<textarea name="pbContent" id="editor"></textarea>
 			<script>
-				CKEDITOR.replace('editor');
+			CKEDITOR.replace('editor', {
+			      width: 1000,
+			      height: 900,
+			      resize_dir: 'both'
+			    });
 			</script>
 	</div>
 </div>
